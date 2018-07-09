@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="style.css"/>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+            <script src = "additem.js"></script>
+    </head>
+    <body ng-app="shoppingList" id="body" ng-controller="listCtrl">
+        <h4>Shopping list</h4>
+        <div class="inline-group">
+        <form action="/action_page.php">
+            <div class="form-group"></div>
+            <input  type="text" ng-model="item" class="form-control"/>
+            <button class="btn btn-success" ng-click="add()" class="form-control"/>Add
+            </div>
+        </form>
+        </div>
+        <script>console.log(12);</script>
+        <div ng-repeat="item in list" class="inline-group">
+                <script>console.log(14);</script>
+               <ul id="listPrint">
+                   <li class="list-group-item" ng-click="showme=true"><p ng-hide="showme">{{item.item}} </p></li>
+               </ul>
+               <p ng-show="showme">{{item.item}} in the cart</p>
+                <script>console.log(16);</script>
+            </div>
+  <p>click on the item name to remove it from the list.</p>
+    </body>
+</html>
