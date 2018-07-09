@@ -4,7 +4,7 @@
             <link rel="stylesheet" type="text/css" href="style.css"/>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
             <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-            <script src = "additem.js"></script>
+            <script src = "angular.js"></script>
     </head>
     <body ng-app="shoppingList" id="body" ng-controller="listCtrl">
         <h4>Shopping list</h4>
@@ -25,6 +25,6 @@
                <p ng-show="showme">{{item.item}} in the cart</p>
                 <script>console.log(16);</script>
             </div>
-  <p>click on the item name to remove it from the list.</p>
+  <p id="text">click on the item name to remove it from the list.</p>
     </body>
 </html>
