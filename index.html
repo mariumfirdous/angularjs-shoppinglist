@@ -19,8 +19,8 @@
         <script>console.log(12);</script>
         <div ng-repeat="item in list" class="inline-group">
                 <script>console.log(14);</script>
-               <ul id="listPrint">
-                   <li class="list-group-item" ng-click="showme=true"><p ng-hide="showme">{{item.item}} </p></li>
+               <ul id="listPrint" ng-hide="showme">
+                   <li class="list-group-item" ng-click="showme=true">{{item.item}} </li>
                </ul>
                <p ng-show="showme">{{item.item}} in the cart</p>
                 <script>console.log(16);</script>
