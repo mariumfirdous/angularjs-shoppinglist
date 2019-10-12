@@ -14,6 +14,7 @@ app.controller('listCtrl',function($scope){
         }
          $scope.newId=-1;
         $scope.newId= $scope.searchItem($scope.item);
+        $scope.newId= $scope.searchItem($scope.item);
         if($scope.newId==2){
             $scope.list.push(newVar);
         }
