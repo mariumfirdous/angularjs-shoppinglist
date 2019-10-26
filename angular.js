@@ -6,23 +6,17 @@ app.controller('listCtrl',function($scope){
         {"item":"bread"},
         {"item":"butter"}
     ]
-    console.log("09");
     $scope.add = function(){
-        console.log('o11');
         $scope.item;
-        console.log('o13');
         newVar= {
             "item":$scope.item
            
         }
-         console.log('o16');
          $scope.newId=-1;
-        $scope.newId= $scope.searchItem($scope.item);  
-        console.log('o19');  
+        $scope.newId= $scope.searchItem($scope.item);
+        $scope.newId= $scope.searchItem($scope.item);
         if($scope.newId==2){
-            console.log('o21');
             $scope.list.push(newVar);
-            console.log('o23');
         }
         else{
             alert(" item already exists");
